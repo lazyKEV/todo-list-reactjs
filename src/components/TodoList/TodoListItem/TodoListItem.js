@@ -1,10 +1,11 @@
 import React from 'react';
+import './TodoListItem.css'
 
-
-const TodoListItem = ({item}) => {
+const TodoListItem = (props) => {
     return (
-        <div>
-            {item.id} {item.title} {item.description}
+        <div className="TodoListItem">
+            {props.item.title} {props.item.description} {props.item.date}
+            <button onClick={(event) => props.remove(props.item.id, event)}>Remove</button>
         </div>
     );
 }

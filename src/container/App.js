@@ -62,7 +62,7 @@ class App extends Component {
     })
   }
 
-  removeItem = (key, event) => {
+  removeItemHandler = (key, event) => {
     event.preventDefault();
     this.setState(prevState => ({
       items: prevState.items.filter(item => {
@@ -76,7 +76,7 @@ class App extends Component {
       <div className='App'>
         My To-do Lists
         <TodoHeader removeAll={this.removeAllHandler} />
-        <TodoList items={this.state.items} />
+        <TodoList items={this.state.items} removeItem={this.removeItemHandler} />
         <InputItem submitForm={this.formSubmitHandler} item={this.state.itemForm} changeInput={this.formInputHandler} />
       </div>
     );

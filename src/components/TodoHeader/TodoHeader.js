@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const TodoHeader = () => {
+const TodoHeader = (props) => {
     return (
         <div>
-            <button type="submit">Remove All</button> 
+            <button type="submit" onClick={props.removeAll}>Remove All</button> 
         </div>
     )
 }

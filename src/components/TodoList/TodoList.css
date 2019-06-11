@@ -1,0 +1,6 @@
+.TodoList {
+    border: 2px solid red;
+    height: 70%;
+    overflow: auto;
+
+}
