@@ -1,0 +1,21 @@
+.form-group {
+    padding: 10px;
+}
+
+.form-control {
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.form-control input {
+    width: 100%;
+    line-height: 25px;
+    box-sizing: border-box
+}
+
+.form-control textarea {
+    resize: none;
+    width: 100%;
+    box-sizing: border-box
+}
