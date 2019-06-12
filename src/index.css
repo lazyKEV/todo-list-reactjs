@@ -1,6 +1,6 @@
 body {
   background: #abbaab;
-  background: -webkit-linear-gradient(to down, #ffffff, #abbaab);
+  background: -webkit-linear-gradient(to top left, #ffffff, #abbaab);
   background: linear-gradient(to top left, #ffffff, #abbaab);
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
