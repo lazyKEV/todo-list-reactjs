@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import uuid4 from 'uuid/v4'
 import moment from 'moment'
 import './App.css';
-import TodoHeader from '../components/TodoHeader/TodoHeader';
+import TodoNav from '../components/TodoNav/TodoNav';
 import TodoList from '../components/TodoList/TodoList';
 import InputItem from '../components/InputItem/InputItem';
 
@@ -74,7 +74,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <TodoHeader removeAll={this.removeAllHandler} />
+        <TodoNav removeAll={this.removeAllHandler} />
         <TodoList items={this.state.items} removeItem={this.removeItemHandler} />
         <InputItem submitForm={this.formSubmitHandler} item={this.state.itemForm} changeInput={this.formInputHandler} />
       </div>

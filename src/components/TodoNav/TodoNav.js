@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const TodoHeader = (props) => {
+const TodoNav = (props) => {
     return (
         <div className="nav">
             To-Do List
@@ -10,4 +10,4 @@ const TodoHeader = (props) => {
     )
 }
 
-export default TodoHeader;
+export default TodoNav;
