@@ -1,21 +1,42 @@
-.form-group {
+.todo-form {
+    background-color: #f7f1e3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    height: 160px;
     padding: 10px;
 }
 
-.form-control {
+.todo-form>input {
+    border-radius: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
     display: block;
-    padding: 5px 0;
+    margin: 0 0 10px 0;
+    outline: none;
+    padding: 10px 15px;
     width: 100%;
 }
 
-.form-control input {
-    width: 100%;
-    line-height: 25px;
-    box-sizing: border-box
+.todo-form>input[type="submit"] {
+    background: #c31432;
+    background: -webkit-linear-gradient(to left, #240b36, #c31432);
+    background: linear-gradient(to left, #240b36, #c31432);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
 }
 
-.form-control textarea {
-    resize: none;
-    width: 100%;
-    box-sizing: border-box
+.todo-form>input[type="submit"]:hover {
+    background: #c31432;
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432);
+    box-shadow: 0 0 5px 0 #c31432;
+}
+
+.todo-form>input[type="text"]:focus {
+    border: 1px solid #c31432;
+    box-shadow: 0 0 5px 0 #c31432;
 }

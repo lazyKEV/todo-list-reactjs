@@ -74,7 +74,6 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        My To-do Lists
         <TodoHeader removeAll={this.removeAllHandler} />
         <TodoList items={this.state.items} removeItem={this.removeItemHandler} />
         <InputItem submitForm={this.formSubmitHandler} item={this.state.itemForm} changeInput={this.formInputHandler} />
