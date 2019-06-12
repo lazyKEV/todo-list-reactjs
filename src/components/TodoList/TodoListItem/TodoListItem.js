@@ -1,18 +1,19 @@
 import React from 'react';
 import './TodoListItem.css'
+import moment from 'moment'
 
 const TodoListItem = (props) => {
     return (
         <div className="TodoListItem">
-            <div class="note-title">
+            <div className="note-title">
                 {props.item.title}
             </div>
-            <div class="note-desc">
+            <div className="note-desc">
                 {props.item.description}
             </div>
-            <div class="note-del">
-                <span>{props.item.date}</span>
-                <span><i class="fa fa-trash" aria-hidden="true" onClick={(event) => props.remove(props.item.id, event)}></i></span>
+            <div className="note-del">
+                <span>{moment.unix(props.item.date).local().fromNow()}</span>
+                <span><i className="fa fa-trash" aria-hidden="true" onClick={(event) => props.remove(props.item.id, event)}></i></span>
             </div>
         </div>
     );

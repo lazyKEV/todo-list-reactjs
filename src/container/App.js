@@ -36,7 +36,7 @@ class App extends Component {
       date: moment.utc().unix()
     }
 
-    console.log(newItem)
+    // console.log(newItem)
     this.setState(prevState => ({
       items: prevState.items.concat(newItem),
       itemForm: {
