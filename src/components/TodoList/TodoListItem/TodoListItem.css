@@ -1,6 +1,53 @@
 .TodoListItem {
-    box-shadow: 0 2px 3px grey;
-    padding: 15px;
-    margin: 5px;
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    box-shadow: 0 1px 5px 0 rgb(201, 201, 201);
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+}
 
+.note-title {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.note-title:hover {
+    cursor: pointer;
+}
+
+.note-desc {
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.note-del {
+    align-items: center;
+    box-sizing: border-box;
+    color: grey;
+    display: flex;
+    font-size: 12px;
+    font-style: italic;
+    justify-content: space-between;
+    padding: 10px 5px 8px 10px;
+    text-align: right;
+}
+
+.note-del>span>i {
+    box-sizing: border-box;
+    color: red;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.note-del>span>i:hover {
+    border: 1px solid red;
+    border-radius: 3px;
+    cursor: pointer;
 }
